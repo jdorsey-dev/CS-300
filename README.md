@@ -2,33 +2,33 @@
 
 ## Project Overview
 
-This repository contains work completed for CS-300: Data Structures and Algorithms at Southern New Hampshire University. The projects focused on developing a course-planning program for academic advisors at ABCU.
+This repository contains my work from CS-300 at Southern New Hampshire University. For these projects, I worked on designing and building a course-planning program that academic advisors at ABCU could use to look up courses and their prerequisites.
 
-In Project One, I designed pseudocode and analyzed the runtime and memory requirements of three data structures: vectors, hash tables, and binary search trees. In Project Two, I used C++ to build the course-planning program with a binary search tree.
+In Project One, I compared vectors, hash tables, and binary search trees to figure out which would work best for the program. In Project Two, I took what I learned and built the program in C++ using a binary search tree.
 
 ## Project Reflection
 
 ### What was the problem you were solving in the projects for this course?
 
-The goal was to create a program that would help academic advisors access course information more easily. The program needed to read course data from a CSV file, display the courses in alphanumeric order, and allow users to search for individual courses and view their prerequisites. Before writing the final program, I had to compare different data structures to determine which would work best for these requirements.
+The main goal was to build a program that would make it easier for academic advisors to look up course information. The program needed to read course data from a CSV file, print a list of courses in alphanumeric order, and let advisors search for a specific course to see its prerequisites. Before building the program, I had to figure out which data structure made the most sense for what we were trying to accomplish.
 
 ### How did you approach the problem? Consider why data structures are important to understand.
 
-I started by developing pseudocode for vectors, hash tables, and binary search trees. I then compared their runtime and memory requirements, along with the advantages and disadvantages of each structure. I ultimately chose a binary search tree because it supports searching by course number and can print courses in alphanumeric order through an in-order traversal. This helped me understand that choosing a data structure isn't just about which one is fastest, but which one best fits what the program needs to do.
+I started by writing pseudocode for three different data structures: a vector, a hash table, and a binary search tree. From there, I looked at their runtime and memory requirements and compared what each one did well and where it might struggle. I ended up choosing a binary search tree because it could search for courses and print them in order without needing an extra sorting step. One thing I learned from this was that there isn't really one data structure that's best for everything. It depends on what you need the program to do.
 
 ### How did you overcome any roadblocks you encountered while going through the activities or project?
 
-One of the challenges I encountered was getting the program to locate and read the CSV file correctly. I had to check the file location and make sure the program was looking in the right place. I also ran into a build issue when the executable was still in use. Working through these problems reminded me how important it is to test programs and troubleshoot one issue at a time. Breaking the program into smaller functions also made it easier to understand what was happening when something wasn't working.
+I ran into a few issues while working on the projects. One was getting the program to find and read the CSV file correctly. I had to go back and check where the file was located and where the program was trying to find it. I also had a build issue because the executable was still running. Neither problem was particularly complicated once I figured out what was happening, but they were frustrating at first. I've gotten better about slowing down, checking things one at a time, and trying to understand what's causing a problem instead of just changing code until something works.
 
 ### How has your work on this project expanded your approach to designing software and developing programs?
 
-Before this course, I mainly focused on getting my programs to work correctly. These projects helped me think more about how a program should be designed before writing the code. Comparing the different data structures showed me how much a design decision can affect performance, memory usage, and the amount of work required to complete a task. I also gained more experience using pseudocode to plan a program before implementing it in C++.
+I think the biggest change is that I'm starting to put more thought into how I want a program to work before I start coding it. In the past, I was usually more focused on just getting everything to work. This course made me think more about why I would choose one approach over another. Working through the pseudocode and runtime analysis also showed me how much the structure of a program can affect its performance. It's something I'll definitely be paying more attention to in future projects.
 
 ### How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
 
-These projects reinforced the importance of keeping code organized and easy to follow. In Project Two, I separated tasks such as loading and validating course data, searching for courses, and printing course information into their own functions. I also used descriptive names and comments to explain what different parts of the program were doing. Going forward, I want to continue writing programs this way because it makes the code easier to troubleshoot, update, and understand when I come back to it later.
+I've gotten more comfortable breaking programs into smaller functions instead of trying to do too much in one place. For Project Two, I kept things like reading the file, validating the data, searching for courses, and printing information in separate functions. I also tried to use names that made sense and comments that explained what the code was doing. I think this makes it a lot easier to go back through a program and figure out what's happening, especially when something needs to be fixed or changed later.
 
 ## Repository Contents
 
-- **Project One: Runtime and Memory Analysis** - Pseudocode and analysis comparing vectors, hash tables, and binary search trees, including the reasoning behind my final data structure recommendation.
-- **Project Two: Advising Assistance Program** - C++ source code for a course-planning program that loads and validates course data, stores courses in a binary search tree, prints courses in alphanumeric order, and displays course prerequisite information.
+- **Project One: Runtime and Memory Analysis** - My comparison of vectors, hash tables, and binary search trees, including their runtime, memory requirements, and why I chose a binary search tree for the final program.
+- **Project Two: Advising Assistance Program** - My C++ program that reads course information from a CSV file, stores it in a binary search tree, and lets users print the course list or search for a course and its prerequisites.
